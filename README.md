@@ -1,5 +1,7 @@
 # Keras TCN
 
+Works with Keras 3.0 without Tensorflow
+
 *Keras Temporal Convolutional Network*. [[paper](https://arxiv.org/abs/1803.01271)]
 
 Tested with Tensorflow 2.9, 2.10, 2.11, 2.12, 2.13, 2.14 and 2.15 (Nov 17, 2023).
