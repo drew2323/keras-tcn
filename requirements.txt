@@ -2,3 +2,4 @@ numpy
 keract
 matplotlib
 pydot
+keras

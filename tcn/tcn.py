@@ -1,15 +1,15 @@
 import inspect
 from typing import List # noqa
 
-import tensorflow as tf
+# import tensorflow as tf
 # pylint: disable=E0611,E0401
-from tensorflow.keras import backend as K, Model, Input, optimizers
+from keras import backend as K, Model, Input, optimizers
 # pylint: disable=E0611,E0401
-from tensorflow.keras import layers
+from keras import layers
 # pylint: disable=E0611,E0401
-from tensorflow.keras.layers import Activation, SpatialDropout1D, Lambda
+from keras.layers import Activation, SpatialDropout1D, Lambda
 # pylint: disable=E0611,E0401
-from tensorflow.keras.layers import Layer, Conv1D, Dense, BatchNormalization, LayerNormalization
+from keras.layers import Layer, Conv1D, Dense, BatchNormalization, LayerNormalization
 
 
 def is_power_of_two(num: int):
@@ -337,7 +337,7 @@ class TCN(Layer):
 
         if self.go_backwards:
             # reverse x in the time axis
-            x = tf.reverse(x, axis=[1])
+            x = K.reverse(x, axis=[1])
 
         self.layers_outputs = [x]
         self.skip_connections = []
